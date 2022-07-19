@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    h1{
+        font-family:sans-serif;
+        font-size:100px;
+        text-transform:capitalize;
+         text-align:center;
+        margin-top:100px;
+        }
+        #form{text-align:center;}
+#number,#btn{padding:12px;}
+#result
+{
+text-align:center;
+font-size:20px;
+} 
+        </style>
+</head>
+<body>
+
+    <h1>count number of digit</h1>
+    <form id="form">
+         <input type="text"name=""placeholder="type any number"id="number">
+         <input type="submit"value="check" id="btn">
+    </form>
+    <p id="result"></p>
+   <script>
+    var frm=document.getElementById("form");
+frm.onsubmit=function(){
+   var num=document.getElementById("number").value;
+      var  result=document.getElementById("result");
+   var count= num.toString().length;
+    result.innerHTML=count;
+    return false;
+}
+</script>
+
+<script src="main.js"></script>
+</body>
+</html>
