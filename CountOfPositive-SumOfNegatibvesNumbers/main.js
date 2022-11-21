@@ -5,7 +5,7 @@ function print(arr)
  let positivesArray=[];
  let sumNegatives=0;
   for (let index = 0; index < arr.length; index++) {
-    if(arr[index] > 0)
+    if(arr[index] >0)
     {
         positivesArray.push(arr[index])
     }
